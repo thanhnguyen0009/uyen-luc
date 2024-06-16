@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./thiep/box.css">
+    <title>Thiệp Mời | Xác Nhận Tham Dự</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="./thiep/jquery.fancybox.min.css" rel="stylesheet" />
+    <script src="./thiep/jquery.fancybox.min.js"></script>
+    <style>
+        #thiepmoi {
+            display: none;
+            max-height: 99vh;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            /* Giới hạn chiều rộng của popup */
+            overflow: hidden;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-top: 177.78%;
+            /* Tỉ lệ 9:16 */
+        }
+        
+        #ytplayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .fancybox-button svg {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-container">
+            <!-- <div class="img-top">
+                <img src="./thiep/anh/pic1-04.png" alt="" class="img-top">
+            </div> -->
+            <div class="box-top">
+                <a data-fancybox data-src="#thiepmoi" href="javascript:;" class="btn btn-primary">
+                <img src="./thiep/anh/IMG_1101.GIF" alt="" class="img-top"></a>
+
+                <img src="./thiep/anh/u-l-03.png" alt="" class="img-top1">
+                <!-- <label for="" class="lb-top2">CÔNG HUÂN & PHƯƠNG KHANH</label> -->
+                <div class="box-btn">
+                    <div class="row">
+                        <a href="https://maps.app.goo.gl/7oGR5QGwz12Mn8pG9" target="_blank" class="centered">
+                            <img src="./thiep/anh/bando-04.png" alt="" class="img-btn"></a>
+                            <a href="./xacnhan.html" target="_blank" class="centered">
+                                <img src="./thiep/anh/xacnhan-04.png" alt="" class="img-btn"></a>
+                    </div>
+                </div>
+                <div class="box-cnt">
+                    <img src="./thiep/anh/cnt-04.png" alt="" class="img-tiltle">
+                    <img src="./thiep/anh/click-05.png" alt="" class="img-click">
+                    <a href="https://www.stjude.org/promotion/impact-giving-pm.html" target="_blank">
+                        <img src="./thiep/anh/click-icon-06.png" alt="" class="img-icon"></a>
+                </div>
+            </div>
+            <!-- <button data-modal-target="modal1" class="btn-modal"><img src="./thiep/anh/qr-04.png" alt="" class="img-btn"></button>
+            <button data-modal-target="modal2" class="btn-modal"><img src="./thiep/anh/thoigian-04.png" alt="" class="img-btn"></button> -->
+            <div class="modal" id="modal1"> <!-- This is the background overlay -->
+              <div class="modal-content"> <!-- This is the actual modal/popup box -->
+                <span class="modal-close">&times;</span>
+                <h1>QR CODE</h1>
+                <img src="./thiep/anh/qr-04.png" alt="" class="img-modal">
+              </div>
+            </div>
+            <div class="modal" id="modal2">
+              <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h1>THỜI GIAN & ĐỊA ĐIỂM</h1>
+               <img src="./thiep/anh/tgdd-05.png" alt="" class="img-modal">
+              </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div style="display: none;padding:0;" id="thiepmoi">
+        <div class="video-container">
+            <iframe id="ytplayer" type="text/html" 
+                src="https://www.youtube.com/embed/FxDkellGhMU?autoplay=1&mute=0&start=1" 
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    </div>
+    <script>
+        // var ebModal = document.getElementById('mySizeChartModal');
+
+        // var ebBtn = document.getElementById("mySizeChart");
+
+        // var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+
+        // ebBtn.onclick = function() {
+        //     ebModal.style.display = "block";
+        // }
+
+        // ebSpan.onclick = function() {
+        //     ebModal.style.display = "none";
+        // }
+
+        // window.onclick = function(event) {
+        //     if (event.target == ebModal) {
+        //         ebModal.style.display = "none";
+        //     }
+        // }
+
+
+
+        const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
+        const modals = document.querySelectorAll(".modal");
+        const modalCloseButtons = document.querySelectorAll(".modal-close");
+
+        modalTriggerButtons.forEach(elem => {
+        elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
+        });
+        modalCloseButtons.forEach(elem => {
+        elem.addEventListener("click", event => toggleModal(event.currentTarget.closest(".modal").id));
+        });
+        modals.forEach(elem => {
+        elem.addEventListener("click", event => {
+            if(event.currentTarget === event.target) toggleModal(event.currentTarget.id);
+        });
+        });
+
+        // Maybe also close with "Esc"...
+        document.addEventListener("keydown", event => {
+        if(event.keyCode === 27 && document.querySelector(".modal.modal-show")) {
+            toggleModal(document.querySelector(".modal.modal-show").id);
+        }
+        });
+
+        function toggleModal(modalId) {
+        const modal = document.getElementById(modalId);
+
+        if(getComputedStyle(modal).display==="flex") { // alternatively: if(modal.classList.contains("modal-show"))
+            modal.classList.add("modal-hide");
+            setTimeout(() => {
+            document.body.style.overflow = "initial"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown - in this case: "initial" <=> "visible"
+            modal.classList.remove("modal-show", "modal-hide");
+            modal.style.display = "none";      
+            }, 200);
+        }
+        else {
+            document.body.style.overflow = "hidden"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown
+            modal.style.display = "flex";
+            modal.classList.add("modal-show");
+        }
+        }
+    </script>
+</body>
+</html>

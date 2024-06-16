@@ -1,0 +1,467 @@
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamBlackItalic.eot');
+  src: url('SVN-GothamBlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBlackItalic.woff2') format('woff2'),
+      url('SVN-GothamBlackItalic.woff') format('woff'),
+      url('SVN-GothamBlackItalic.ttf') format('truetype'),
+      url('SVN-GothamBlackItalic.svg#SVN-GothamBlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamBlack.eot');
+  src: url('SVN-GothamBlack.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBlack.woff2') format('woff2'),
+      url('SVN-GothamBlack.woff') format('woff'),
+      url('SVN-GothamBlack.ttf') format('truetype'),
+      url('SVN-GothamBlack.svg#SVN-GothamBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamBoldItalic.eot');
+  src: url('SVN-GothamBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBoldItalic.woff2') format('woff2'),
+      url('SVN-GothamBoldItalic.woff') format('woff'),
+      url('SVN-GothamBoldItalic.ttf') format('truetype'),
+      url('SVN-GothamBoldItalic.svg#SVN-GothamBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamBold.eot');
+  src: url('SVN-GothamBold.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBold.woff2') format('woff2'),
+      url('SVN-GothamBold.woff') format('woff'),
+      url('SVN-GothamBold.ttf') format('truetype'),
+      url('SVN-GothamBold.svg#SVN-GothamBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url('SVN-GothamBookItalic.eot');
+  src: url('SVN-GothamBookItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBookItalic.woff2') format('woff2'),
+      url('SVN-GothamBookItalic.woff') format('woff'),
+      url('SVN-GothamBookItalic.ttf') format('truetype'),
+      url('SVN-GothamBookItalic.svg#SVN-GothamBookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url('SVN-GothamBook.eot');
+  src: url('SVN-GothamBook.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBook.woff2') format('woff2'),
+      url('SVN-GothamBook.woff') format('woff'),
+      url('SVN-GothamBook.ttf') format('truetype'),
+      url('SVN-GothamBook.svg#SVN-GothamBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamItalic.eot');
+  src: url('SVN-GothamItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamItalic.woff2') format('woff2'),
+      url('SVN-GothamItalic.woff') format('woff'),
+      url('SVN-GothamItalic.ttf') format('truetype'),
+      url('SVN-GothamItalic.svg#SVN-GothamItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamBold_1.eot');
+  src: url('SVN-GothamBold_1.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamBold_1.woff2') format('woff2'),
+      url('SVN-GothamBold_1.woff') format('woff'),
+      url('SVN-GothamBold_1.ttf') format('truetype'),
+      url('SVN-GothamBold_1.svg#SVN-GothamBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamLightItalic.eot');
+  src: url('SVN-GothamLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamLightItalic.woff2') format('woff2'),
+      url('SVN-GothamLightItalic.woff') format('woff'),
+      url('SVN-GothamLightItalic.ttf') format('truetype'),
+      url('SVN-GothamLightItalic.svg#SVN-GothamLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamLight.eot');
+  src: url('SVN-GothamLight.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamLight.woff2') format('woff2'),
+      url('SVN-GothamLight.woff') format('woff'),
+      url('SVN-GothamLight.ttf') format('truetype'),
+      url('SVN-GothamLight.svg#SVN-GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-Gotham.eot');
+  src: url('SVN-Gotham.eot?#iefix') format('embedded-opentype'),
+      url('SVN-Gotham.woff2') format('woff2'),
+      url('SVN-Gotham.woff') format('woff'),
+      url('SVN-Gotham.ttf') format('truetype'),
+      url('SVN-Gotham.svg#SVN-Gotham') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamThinItalic.eot');
+  src: url('SVN-GothamThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamThinItalic.woff2') format('woff2'),
+      url('SVN-GothamThinItalic.woff') format('woff'),
+      url('SVN-GothamThinItalic.ttf') format('truetype'),
+      url('SVN-GothamThinItalic.svg#SVN-GothamThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamLight_1.eot');
+  src: url('SVN-GothamLight_1.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamLight_1.woff2') format('woff2'),
+      url('SVN-GothamLight_1.woff') format('woff'),
+      url('SVN-GothamLight_1.ttf') format('truetype'),
+      url('SVN-GothamLight_1.svg#SVN-GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url('SVN-GothamUltraItalic.eot');
+  src: url('SVN-GothamUltraItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamUltraItalic.woff2') format('woff2'),
+      url('SVN-GothamUltraItalic.woff') format('woff'),
+      url('SVN-GothamUltraItalic.ttf') format('truetype'),
+      url('SVN-GothamUltraItalic.svg#SVN-GothamUltraItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('SVN-GothamThin.eot');
+  src: url('SVN-GothamThin.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamThin.woff2') format('woff2'),
+      url('SVN-GothamThin.woff') format('woff'),
+      url('SVN-GothamThin.ttf') format('truetype'),
+      url('SVN-GothamThin.svg#SVN-GothamThin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url('SVN-GothamUltra.eot');
+  src: url('SVN-GothamUltra.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamUltra.woff2') format('woff2'),
+      url('SVN-GothamUltra.woff') format('woff'),
+      url('SVN-GothamUltra.ttf') format('truetype'),
+      url('SVN-GothamUltra.svg#SVN-GothamUltra') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham XLight';
+  src: url('SVN-GothamXLightItalic.eot');
+  src: url('SVN-GothamXLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamXLightItalic.woff2') format('woff2'),
+      url('SVN-GothamXLightItalic.woff') format('woff'),
+      url('SVN-GothamXLightItalic.ttf') format('truetype'),
+      url('SVN-GothamXLightItalic.svg#SVN-GothamXLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham XLight';
+  src: url('SVN-GothamXLight.eot');
+  src: url('SVN-GothamXLight.eot?#iefix') format('embedded-opentype'),
+      url('SVN-GothamXLight.woff2') format('woff2'),
+      url('SVN-GothamXLight.woff') format('woff'),
+      url('SVN-GothamXLight.ttf') format('truetype'),
+      url('SVN-GothamXLight.svg#SVN-GothamXLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Sunflora';
+  src: url('SVN-Sunflora.eot');
+  src: url('SVN-Sunflora.eot?#iefix') format('embedded-opentype'),
+      url('SVN-Sunflora.woff2') format('woff2'),
+      url('SVN-Sunflora.woff') format('woff'),
+      url('SVN-Sunflora.ttf') format('truetype'),
+      url('SVN-Sunflora.svg#SVN-Sunflora') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Sunflora';
+  src: url('SVN-Sunflora.eot');
+  src: url('SVN-Sunflora.eot?#iefix') format('embedded-opentype'),
+      url('SVN-Sunflora.woff2') format('woff2'),
+      url('SVN-Sunflora.woff') format('woff'),
+      url('SVN-Sunflora.ttf') format('truetype'),
+      url('SVN-Sunflora.svg#SVN-Sunflora') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Dessert Menu Script';
+  src: url('SVN-DessertMenuScript.eot');
+  src: url('SVN-DessertMenuScript.eot?#iefix') format('embedded-opentype'),
+      url('SVN-DessertMenuScript.woff2') format('woff2'),
+      url('SVN-DessertMenuScript.woff') format('woff'),
+      url('SVN-DessertMenuScript.ttf') format('truetype'),
+      url('SVN-DessertMenuScript.svg#SVN-DessertMenuScript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 480px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box-form{
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 40px; */
+  background-image: url('./anh/back2-04.png');
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-form{
+  width: 100%;
+}
+.lb-form{
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+
+.feed-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.in-fe{
+  font-size: 10px;
+  font-weight: 300;
+  font-family: 'SVN-Gotham';
+}
+
+
+[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  /* overflow: hidden; */
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* white-space: nowrap; */
+  }
+
+.container-check {
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  font-family: 'SVN-Gotham';
+  font-weight: 300;
+  }
+  
+
+.box-feed:checked+label {
+  color: #fff;
+  background-color: black;
+  }
+  
+.box-feed{
+border-radius: 20px;
+width: 100px;
+}
+  
+.box-check{
+display: inline-block;
+align-items: center;
+justify-content: center;
+font-family: 'SVN-Gotham';
+border-radius: 20px;
+/*margin: 0 15px;*/
+}
+
+.box-feed:checked+label {
+color: #fff;
+background-color: #8C8C8C;
+}
+
+.box-feed{
+border-radius: 20px;
+}
+
+
+.til-check{
+/* margin: 0 auto; */
+font-style: normal;
+font-size: 13px;
+font-weight: 400;
+}
+
+
+.check-box {
+width: 90px;
+text-align: center;
+display: inline-block;
+border: 1px solid black;
+padding: 5px 10px;
+margin: 5px 20px;
+border-radius: 20px;
+font-style: normal;
+background-color: #fff;
+}
+.box-feed:checked+label {
+color: #fff;
+background-color: #8C8C8C;
+}
+
+.box-ten{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: 'SVN-Gontham';
+  }
+  
+  .inp-ten{
+  width: 350px;
+  height: 30px;
+  text-align: left;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin: 5px 0;
+  }
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+  margin-left: 10px;
+}
+.xacnhan{
+  height: 30px;
+  font-size: 15px;
+  background: #8C8C8C;
+  color: #fff;
+  margin: 20px 10px;
+  border-radius: 20px;
+  border: 1px solid #8C8C8C;
+  cursor: pointer;
+  width: 150px;
+}
+  
+  .xacnhan:hover{
+  background: #111;
+  color: #fff;
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+  .container {
+      width: 100%;
+  }
+  .info{
+    font-size: 10px;
+  }
+  .lichtrinh{
+    margin-left: 55px;
+  }
+  .box-form{
+    margin-top: 50px;
+    height: 750px;
+  }
+}

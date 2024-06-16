@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thông tin Open Graph cho ảnh đại diện -->
+  <!-- <meta property="og:image" content="https://yenstudio.com.vn/back1.jpg" /> -->
+  <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+  <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+
+  <!-- Các thông tin khác cho Open Graph -->
+  <meta property="og:title" content="UYEN - LUC" />
+  <meta property="og:description" content="UYEN - LUC" />
+  <!-- <meta property="og:url" content="https://yenstudio.com.vn/thiep-online/dung-my.html" /> -->
+  <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./thiep/xacnhan.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>UYEN - LUC</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="box-form">
+                <img src="./thiep/anh/thamdu-05.png" alt="" class="img-form">
+                <form action="" name="demo">
+                    <div class="feed-info">
+                        <label for="" class="in-fe">DÀNH CHÚT THỜI GIAN ĐỂ XÁC NHẬN THAM DỰ GIÚP <strong>UYÊN & LỰC</strong> NHÉ!</label>
+                    </div>
+        
+                    <div class="container-check">
+                        <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                        <label class="check-box" for="yes">
+                            <h3 class="til-check">CÓ</h3>
+                        </label>
+                        <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                        <label class="check-box" for="no"> 
+                            <h3 class="til-check">KHÔNG</h3>
+                        </label>
+                        <input class="box-feed" type="radio" value="CÓ THỂ" id="can" name="XÁC NHẬN">
+                        <label class="check-box" for="can"> 
+                            <h3 class="til-check">CÓ THỂ</h3>
+                        </label>
+                    </div>
+        
+                    <div class="box-ten">
+                        <input required class="inp-ten" type="text"  name="TÊN" placeholder="Tên">
+                        <input required class="inp-ten" type="text"  name="SĐT" placeholder="Số điện thoại">
+                    </div>
+                    <div class="wrapper">
+                        <button class="xacnhan" type="submit">XÁC NHẬN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxEscBUDF-87IpIqmULh3k_qTJfts6Vp5A0nthkJeOHKKlXTF_-5YEAjM5Tkt613tM/exec';
+        const form = document.forms['demo'];
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi trang tự tải lại nhé <3'); // Hiển thị thông báo ngay lập tức khi nhấn submit
+        
+        // Gửi dữ liệu form đi
+        fetch(scriptURL, { 
+            method: 'POST', 
+            body: new FormData(form)
+        })
+        .then(response => {
+            if (response.ok) {
+                // Nếu dữ liệu được gửi thành công, tải lại trang
+                setTimeout(() => {
+                    window.location.reload(); // Tải lại trang sau 0.5 giây
+                }, 100); // 0.5 giây
+            } else {
+                // Nếu gặp lỗi khi gửi dữ liệu
+                console.error('Error!', response);
+                alert('OPPS! Đã xảy ra lỗi');
+            }
+        })
+        .catch(error => {
+            // Xử lý lỗi nếu có
+            console.error('Error!', error.message);
+            alert('OPPS! Đã xảy ra lỗi: ' + error.message);
+        });
+    });
+    
+    </script>
+
+    <script src="./thiep/tony_nga.js"></script>
+</body>
+</html>
