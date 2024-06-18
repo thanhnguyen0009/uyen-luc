@@ -23,32 +23,32 @@
         <div class="container-wrapper">
             <div class="box-form">
                 <img src="./thiep/anh/thamdu-05.png" alt="" class="img-form">
-                <form action="" name="demo">
+                <form action="" name="uyen-luc">
                     <div class="feed-info">
-                        <label for="" class="in-fe">DÀNH CHÚT THỜI GIAN ĐỂ XÁC NHẬN THAM DỰ GIÚP <strong>UYÊN & LỰC</strong> NHÉ!</label>
+                        <label for="" class="in-fe">Please kindly R.S.V.P by July 20th, 2024</label>
                     </div>
         
                     <div class="container-check">
-                        <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                        <input class="box-feed" type="radio" value="YES" id="yes" name="CONFIRM">
                         <label class="check-box" for="yes">
-                            <h3 class="til-check">CÓ</h3>
+                            <h3 class="til-check">YES</h3>
                         </label>
-                        <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                        <input class="box-feed" type="radio" value="NO" id="no" name="CONFIRM">
                         <label class="check-box" for="no"> 
-                            <h3 class="til-check">KHÔNG</h3>
+                            <h3 class="til-check">NO</h3>
                         </label>
-                        <input class="box-feed" type="radio" value="CÓ THỂ" id="can" name="XÁC NHẬN">
+                        <input class="box-feed" type="radio" value="MAYBE" id="can" name="CONFIRM">
                         <label class="check-box" for="can"> 
-                            <h3 class="til-check">CÓ THỂ</h3>
+                            <h3 class="til-check">MAYBE</h3>
                         </label>
                     </div>
         
                     <div class="box-ten">
-                        <input required class="inp-ten" type="text"  name="TÊN" placeholder="Tên">
-                        <input required class="inp-ten" type="text"  name="SĐT" placeholder="Số điện thoại">
+                        <input required class="inp-ten" type="text"  name="NAME" placeholder="Number of guests">
+                        <input required class="inp-ten" type="text" name="PHONE" placeholder="Phone" maxlength="10" pattern="\d{10}">
                     </div>
                     <div class="wrapper">
-                        <button class="xacnhan" type="submit">XÁC NHẬN</button>
+                        <button class="xacnhan" type="submit">SUBMIT</button>
                     </div>
                 </form>
             </div>
@@ -58,12 +58,12 @@
     
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxEscBUDF-87IpIqmULh3k_qTJfts6Vp5A0nthkJeOHKKlXTF_-5YEAjM5Tkt613tM/exec';
-        const form = document.forms['demo'];
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfsiJxQtsQ4QP9SloxW1EwvJKC8gOzINWlbAK6NNk92V7pTWJepz_H-A7ZzRdcC9g/exec';
+        const form = document.forms['uyen-luc'];
     
         form.addEventListener('submit', e => {
         e.preventDefault();
-        alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi trang tự tải lại nhé <3'); // Hiển thị thông báo ngay lập tức khi nhấn submit
+        alert('THANK YOU FOR YOUR FEEDBACK! The data will take about a few seconds to be sent back, press "OK" and wait for the page to reload.'); // Hiển thị thông báo ngay lập tức khi nhấn submit
         
         // Gửi dữ liệu form đi
         fetch(scriptURL, { 
